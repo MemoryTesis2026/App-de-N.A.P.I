@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    background-color: #0A1C30; /* Marco escritorio azul marino institucional */
+    color: #0F2942;
+    overscroll-behavior: none;
+  }
+  #root {
+    height: 100%;
+  }
+}
+
+/* Filtros cromáticos de Daltonismo */
+.filter-protanopia {
+  filter: url('#napi-protanopia');
+}
+.filter-deuteranopia {
+  filter: url('#napi-deuteranopia');
+}
+.filter-tritanopia {
+  filter: url('#napi-tritanopia');
+}
+
+/* Custom Scrollbars adaptativos */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 41, 66, 0.2);
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos de transición suave de tema */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

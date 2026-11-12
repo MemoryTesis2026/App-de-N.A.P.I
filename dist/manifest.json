@@ -1,0 +1,16 @@
+{
+  "short_name": "NAPI",
+  "name": "NAPI - INACAP Sede Maipú",
+  "icons": [
+    {
+      "src": "/napi-logo.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#1E293B",
+  "theme_color": "#1E293B",
+  "display": "standalone",
+  "orientation": "portrait"
+}
